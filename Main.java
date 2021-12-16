@@ -11,7 +11,7 @@ import java.util.Scanner;
 /**
 * This is a program that blanks.
 */
-public class Main {
+final class Main {
     /**
     * Prevent instantiation.
     * Throw an exception IllegalStateException.
@@ -29,7 +29,7 @@ public class Main {
     *
     * @param args No args will be used
     */
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         // variables
         boolean win = false;
         int myGuess = 0;
@@ -57,7 +57,7 @@ public class Main {
                 win = true;
             }
             if (myGuess > 6 || myGuess < 1) {   
-                System.out.println("Your Pick is out of the range...This will not count...Try again");
+                System.out.println("Your Pick is out of the range Try again");
             }
 
             else if (myGuess < computerPick) {
