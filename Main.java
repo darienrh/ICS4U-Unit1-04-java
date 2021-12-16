@@ -13,6 +13,10 @@ import java.util.Scanner;
 */
 final class Main {
     /**
+    * Constant.
+    */
+    public static final int C6 = 6;
+    /**
     * Prevent instantiation.
     * Throw an exception IllegalStateException.
     * if this ever is called
@@ -22,9 +26,7 @@ final class Main {
     */
     private Main() {
         throw new IllegalStateException("Cannot be instantiated");
-    }
-
-    /**
+    } /**
     * The starting main() function.
     *
     * @param args No args will be used
@@ -35,7 +37,7 @@ final class Main {
         int myGuess = 0;
         int trys = 1;
         Random rNumber = new Random();
-        int computerPick = rNumber.nextInt(6);
+        int computerPick = rNumber.nextInt(C6);
         System.out.println("Dice Game");
         System.out.println();
 
@@ -58,14 +60,14 @@ final class Main {
                   + " trys to guess the correct number");
                 win = true;
             }
-            if (myGuess > 6 || myGuess < 1) {
+            if (myGuess > C6 || myGuess < 1) {
                 System.out.println("Your Pick is out of the range Try again");
             }
 
             else if (myGuess < computerPick) {
                 System.out.println("You Picked Low.  Try Again.");
                 trys = trys + 1;
-            } else if (myGuess > computerPick){
+            } else if (myGuess > computerPick) {
                 System.out.println("You Picked High");
                 trys = trys + 1;
             }
