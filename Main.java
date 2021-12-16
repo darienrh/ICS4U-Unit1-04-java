@@ -62,9 +62,7 @@ final class Main {
             }
             if (myGuess > C6 || myGuess < 1) {
                 System.out.println("Your Pick is out of the range Try again");
-               }
-
-            else if (myGuess < computerPick) {
+            } else if (myGuess < computerPick) {
                 System.out.println("You Picked Low.  Try Again.");
                 trys = trys + 1;
             } else if (myGuess > computerPick) {
