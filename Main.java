@@ -52,10 +52,10 @@ final class Main {
             }
             if (myGuess == computerPick) {
                 System.out.println();
-                System.out.println("You WIN! The computer picked " +
-                   computerPick);
-                System.out.println("You took " + trys +
-                   " trys to guess the correct number");
+                System.out.println("You WIN! The computer picked " 
+                  + computerPick);
+                System.out.println("You took " + trys 
+                  + " trys to guess the correct number");
                 win = true;
             }
             if (myGuess > 6 || myGuess < 1) {   
