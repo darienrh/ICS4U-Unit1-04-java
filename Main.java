@@ -52,13 +52,13 @@ final class Main {
             }
             if (myGuess == computerPick) {
                 System.out.println();
-                System.out.println("You WIN! The computer picked " 
+                System.out.println("You WIN! The computer picked "
                   + computerPick);
-                System.out.println("You took " + trys 
+                System.out.println("You took " + trys
                   + " trys to guess the correct number");
                 win = true;
             }
-            if (myGuess > 6 || myGuess < 1) {   
+            if (myGuess > 6 || myGuess < 1) {
                 System.out.println("Your Pick is out of the range Try again");
             }
 
